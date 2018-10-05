@@ -5,18 +5,11 @@
     <title>Example</title>
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/web/bootstrap/bootstrap-3.3.7-dist">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="loader-wrapper">
-      <div id="loader"></div>
-
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-
-    </div>
 
     <div id="content">
       <h1>Page Loaded!</h1>
@@ -24,21 +17,42 @@
         repudiandae iure optio similique facilis recusandae ratione pariatur quod consectetur doloribus laboriosam esse obcaecati eius velit veniam
         reprehenderit quam, necessitatibus ducimus quidem. Neque deserunt quis ex cupiditate itaque, dolorem consectetur ratione, accusantium quibusdam modi
         ea at sint iste quod aspernatur?</p>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-
-    //mettre un timeout
-      setTimeout(function() {
-          $('body').addClass('loaded');
-      }, 3500);
-
-    });
-    </script>
+  </nav>
+    </div>
   </body>
 </html>
